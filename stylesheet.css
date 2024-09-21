@@ -1,7 +1,25 @@
-.contenedor{
-    border-radius: 5px;
+
+.contenedor-principal > div{
     padding: 10px;
+}
+
+.contenedor-principal > .barra-superior{
+    height: 40px;
+    margin: 15px 10px 5px 10px; /* top, right, bottom, left*/
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 1px rgba(20, 20, 20, 0.3);
     background-color: #DDD;
-    box-shadow: 0px 0px 3px 1px #666;
-    margin: 10px;
+}
+
+.contenedor-principal > .grid-secciones{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 15px;
+}
+
+.grid-secciones > .seccion{
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 1px rgba(20, 20, 20, 0.3);
+    background-color: #DDD;
 }
