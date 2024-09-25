@@ -1,12 +1,13 @@
 
 .contenedor-principal > div{
     padding: 10px;
+    font-family: 'Open Sans';
 }
 
 .contenedor-principal > .barra-superior{
     height: 40px;
     margin: 15px 10px 5px 10px; /* top, right, bottom, left*/
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 2px 3px 1px rgba(20, 20, 20, 0.3);
     background-color: #DDD;
 }
@@ -14,25 +15,41 @@
 .contenedor-principal > .grid-secciones{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(2, 360px);
     gap: 15px;
 }
 
 .grid-secciones > .seccion{
-    border-radius: 5px;
+    /* Acá usé display:flex y flex-direction:column para poder hacer que ".categorias"  
+    tome todo el espacio vertical restante de "seccion"
+    */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
     box-shadow: 0px 2px 3px 1px rgba(20, 20, 20, 0.3);
     background-color: #DDD;
-    overflow-y: scroll;
 }
 
 .header-seccion{
+    font-size: x-large;
+    display: flex;
     width: 100%;
+    height: 260px;
     color:antiquewhite;
-    background-color: #000;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: #787878;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
     border-radius: 10px 10px 0px 0px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias{
+    border-radius: 0px 0px 10px 10px;
+    /* con flex-grow:1, este div va a tomar todo el espacio restante*/
+    flex-grow: 1;
+    overflow-y:scroll;
 }
 
 .categoria-seccion{
@@ -41,6 +58,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
