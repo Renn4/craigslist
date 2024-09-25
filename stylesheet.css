@@ -23,3 +23,23 @@
     box-shadow: 0px 2px 3px 1px rgba(20, 20, 20, 0.3);
     background-color: #DDD;
 }
+
+.header-seccion{
+    width: 100%;
+    color:antiquewhite;
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+.categoria-seccion{
+    width: 100%;
+    background-color:#CCC;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
